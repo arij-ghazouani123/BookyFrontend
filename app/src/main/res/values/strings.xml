@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Booky</string>
+    <string name="UsernameTxt">Username</string>
+    <string name="loginTxt">Login</string>
+    <string name="register_link">Create account !</string>
+    <string name="SignUpTxt">Sign Up</string>
+    <string name="login_link">I already have an account:</string>
+    <string name="loading_text">Loading…</string>
+    <string name="Confirmation">Check Your Email For Confirmation Code ..</string>
+    <string name="NewPass">New Password</string>
+    <string name="ConfNewPass">Confirm New Password</string>
+    <string name="Submit">Submit</string>
+    <string name="ForgetPassword">ForgetPassword?</string>
+    <string name="title_activity_confirm_reset_pass">ConfirmResetPassActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="remember_me">remember me</string>
+    <string name="logout">Logout</string>
+    <string name="rechercheTxt">Search</string>
+    <string name="todo">todo</string>
+    <string name="description">description</string>
+    <string name="title">title</string>
+    <string name="new_message">new message</string>
+
+    <string name="upload_your">Upload Your book</string>
+    <string name="book_title">Book Title</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="details">Details</string>
+
+    <string name="upload_button">Upload Button</string>
+    <string name="comment">Comment</string>
+    <string name="name">Name</string>
+    <string name="anyone">anyone</string>
+
+    <string-array name="select_choice_options">
+        <item>Free</item>
+        <item>Trade</item>
+    </string-array>
+
+
+</resources>

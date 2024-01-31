@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:text="Upload Your Post"
+            android:textColor="@color/lavender"
+            android:textSize="25sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:src="@drawable/ic_baseline_clear_24"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/bookCoverCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/bookCoverImageView"
+            android:layout_width="322dp"
+            android:layout_height="174dp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contentDescription="@string/details"
+            android:focusable="true"
+            android:onClick="selectImageFromGallery"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/bookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="16dp"
+        android:background="#FBEEFF"
+        android:hint="Book Title"
+        android:singleLine="true"
+        android:textColorHint="@color/purple_200"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:boxStrokeErrorColor="@color/errorRed"
+        app:errorIconTint="@color/errorRed"
+        app:errorTextColor="@color/errorRed"
+        app:hintAnimationEnabled="true"
+        tools:ignore="TextContrastCheck">
+
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/bookYear"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="0dp"
+        android:background="#FBEEFF"
+        android:hint="Year"
+        android:textColorHint="@color/purple_200"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:boxStrokeErrorColor="@color/errorRed"
+        app:boxStrokeWidth="2dp"
+        app:errorIconTint="@color/errorRed"
+        app:errorTextColor="@color/errorRed"
+        app:hintAnimationEnabled="true"
+        tools:ignore="TextContrastCheck">
+
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/bookDescription"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_margin="20dp"
+        android:background="#FBEEFF"
+        android:hint="Book Description"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:textColorHint="@color/purple_200"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:boxStrokeErrorColor="@color/errorRed"
+        app:boxStrokeWidth="2dp"
+        app:errorIconTint="@color/errorRed"
+        app:errorTextColor="@color/errorRed"
+        app:hintAnimationEnabled="true"
+        tools:ignore="TextContrastCheck">
+
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/layoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="2sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="76dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutTitle"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/radFree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:text="Free"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <RadioButton
+                android:id="@+id/radTrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:text="Trade"
+                android:textColor="@color/colorPrimaryDark" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/blue_fill__rounded_color"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:text="Publish"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>
